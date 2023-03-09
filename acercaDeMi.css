@@ -1,0 +1,132 @@
+.container-grid-menu {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* TITULO */
+.row-titulo {
+    display: flex;
+    padding: 1rem 0rem 0rem 13rem;
+}
+
+.col-sm-12-titulo {
+    display: flex;
+    padding: 0rem 20rem 0rem 19.4rem;
+}
+
+h1 {
+    display: flex;
+    padding: 2rem 6rem;
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+}
+
+/* FOTO Y TEXTO  */
+.row-fotoYTexto {
+    display: flex;
+    align-items: center;
+}
+
+.foto1{
+    display: flex;
+    border-style: solid;
+    border-radius: 4rem;
+    height: fit-content;
+    max-width: 300px;
+    min-width: 100px;
+}
+
+.foto2{
+    display: flex;
+    border-style: solid;
+    border-radius: 4rem;
+    height: fit-content;
+    max-width: 300px;
+    min-width: 100px;
+}
+
+.foto1:hover {
+    max-width: 350px;
+}
+
+.foto2:hover {
+    max-width: 350px;
+}
+
+.col-sm-8-texto1 {
+    display: flex;
+    padding: 0rem 5rem 0rem 0rem;
+}
+
+.col-sm-8-texto2 {
+    display: flex;
+    padding: 0rem 0rem 0rem 5rem;
+}
+
+.col-sm-4-foto {
+    padding: 4rem 5rem;
+    display: flex;
+}
+
+p {
+    display: flex;
+    font-size: larger;
+    padding: 0rem 0rem;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.6rem;
+}
+
+/* MEDIAS */
+
+/* Tabletas */
+
+@media  (min-width:768px) and (max-width:1023px){
+    .row-titulo {
+        display: flex;
+        padding: 1rem 0rem 0rem 9rem;
+    }
+
+    .col-sm-12-titulo {
+        display: flex;
+        padding: 0rem 0rem 0rem 0rem;
+    }
+
+    .row-fotoYTexto {
+        display: flex;
+        padding: 0rem 1rem 0rem 1rem;
+        align-items: flex-start;
+        max-height: 36rem;
+    }
+
+    .col-sm-4-foto {
+        padding: 0rem 3rem 20rem 1rem;
+        display: flex;
+    }
+
+    .col-sm-8-texto1 {
+        display: flex;
+        padding: 1rem 1rem 1rem 1rem;
+    }
+
+    p {
+        display: flex;
+        padding: 0rem 0rem;
+        font-family: 'Playfair Display', serif;
+        font-size: 1.1rem;
+    }
+}
+
+/* Celulares */
+
+@media  (max-width:767px){
+
+    .container-grid-menu {
+        display: grid;
+    }
+
+    .row-titulo {
+        display: flex;
+        padding: 0rem 0rem 0rem 0rem;
+    }
+}
