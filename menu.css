@@ -57,7 +57,7 @@ button{
 
 p.menu:hover {
     color: #FFFFFF;
-    background-color: #00A4BD;
+    background-color: black;
   }
 
 h1{
@@ -82,7 +82,7 @@ p.menu{
 
 /* MEDIAS QUERY */
 
-@media  (min-width:1024px) {
+@media  (max-width:1024px) {
     .dropdown:hover .dropdown-content {
         display: flex;
         position: fixed;
@@ -96,6 +96,13 @@ p.menu{
         display: block;
         color: transparent;
         padding: 1rem 7rem;
+        text-decoration: none;
+    }
+
+    .dropdown-content a{
+        display:block;
+        color:transparent;
+        padding:1rem 6rem;
         text-decoration: none;
     }
 }
