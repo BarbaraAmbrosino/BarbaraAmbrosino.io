@@ -1,27 +1,35 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin:0;
+}
+
+
 /* CONTENEDOR */
-.container-grid-menu{
+.container-grid-menu {
     display: flex;
     position: relative;
     width: 100%;
     background: white;
+    border-bottom: solid;
 }
 
 /* FILA */
-.row{
+.row {
     display: flex;
     justify-content: space-between;
-    padding: 0rem 0rem;
-    width: 100%;
+    width: 61rem;
     height: auto;
+    padding-top: 3rem;
 }
 
 /* MENU DESPEGABLE*/
 
 .dropdown {
-    padding:1rem;
+    padding: 1rem 0rem 0rem 1rem;
     display: inline-block;
     position: relative;
-  }
+}
 
 .dropdown-content {
     display: none;
@@ -31,77 +39,92 @@
     box-shadow: 0px 10px 10px 0px rgb(0 0 0 / 40%);
 }
 
-
-
-.col-sm-5-menu{
+.col-sm-5-menu {
     padding: 1.6rem 12rem 2rem 0rem;
 }
 
-button{
+button {
     display: flex;
     padding: 0rem 0rem;
-    background-color: white;
+    background-color: papayawhip;
+    width: 5rem;
+    height: 5rem;
 }
 
-
+img {
+    display: flex;
+    width: 5rem;
+}
 
 /* LETRA MENU CON LINK*/
 
-.dropdown-content a{
-    display:block;
-    color:transparent;
-    padding:1rem;
+.dropdown-content a {
+    display: block;
+    color: transparent;
+    padding: 1rem;
     text-decoration: none;
 }
 
 p.menu:hover {
-    color: #FFFFFF;
-    background-color: black;
-  }
+    color: grey;
+}
 
-h1{
+p.menu-contacto:hover {
+    color: black;
+}
+
+h1 {
+    transition: all 1.3s;
     border-right: solid;
     border-right-color: black;
     padding: 0.3rem 0.9rem;
     display: flex;
-    font-size: 1rem;
-    font-family: 'Tilt Prism', cursive;
+    font-size: 2rem;
+}
+
+h1:hover{
+    margin-top:1rem;
+    margin-right: 1rem;
+    background-color: black;
+    color:wheat;
 }
 
 /* LETRA MENU-CONTACTO */
-p.menu-contacto{
+p.menu-contacto {
     color: grey;
 }
 
-p.menu{
+p.menu {
     position: absolute;
-    color:black;
+    color: black;
 }
 
-    .dropdown:hover .dropdown-content {
-        display: flex;
-        position: fixed;
-        width: 90%;
-        padding: 0rem 0rem 0rem 0rem;
-        flex-direction: row;
-        justify-content: center;
-    }
+.dropdown:hover .dropdown-content {
+    display: flex;
+    position: fixed;
+    width: 95.8%;
+    padding: 0rem 0rem 0rem 0rem;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 1.2rem;
+}
 
-    .dropdown-content a{
-        display: block;
-        color: transparent;
-        padding: 1rem 7rem;
-        text-decoration: none;
-    }
+.dropdown-content a {
+    display: block;
+    color: transparent;
+    padding: 1rem 7rem;
+    text-decoration: none;
+}
 
-    .dropdown-content a{
-        display:block;
-        color:transparent;
-        padding:1rem 6rem;
-        text-decoration: none;
-    }
+.dropdown-content a {
+    display: block;
+    color: transparent;
+    padding: 0.4rem 1rem;
+    text-decoration: none;
+}
 
-@media (min-width:1440px){
+@media (min-width:1440px) {
+
     h1 {
         border-right: solid;
         border-right-color: white;
@@ -111,7 +134,73 @@ p.menu{
         font-family: 'Tilt Prism', cursive;
     }
 
-    .row{
-        font-size: 1.7rem;
+    button {
+        display: flex;
+        padding: 0rem 0rem;
+        background-color: aliceblue;
+        width: 4rem;
+        height: 4rem;
+    }
+
+    img {
+        display: flex;
+        width: 4rem;
+    }
+
+}
+
+
+/* TABLET */
+@media (min-width:768px) and (max-width:1439px) {
+    button {
+        display: flex;
+        padding: 0rem 0rem;
+        background-color: aliceblue;
+        width: 2rem;
+        height: 2rem;
+    }
+
+    img {
+        display: flex;
+        width: 2rem;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: flex;
+        position: fixed;
+        width: 95.8%;
+        padding: 0rem 0rem 0rem 0rem;
+        flex-direction: row;
+        justify-content: space-between;
+        font-size: 1.4rem;
+    }
+}
+
+/* CELULARES */
+@media (max-width: 767px) {
+
+    /* icono menu */
+    img {
+        display: flex;
+        width: 1.5rem;
+    }
+
+    button {
+        display: flex;
+        padding: 0rem 0rem;
+        background-color: papayawhip;
+        width: 1.8rem;
+        height: 1.8rem;
+    }
+
+    /* contenido menu */
+    .dropdown:hover .dropdown-content {
+        display: flex;
+        position: fixed;
+        width: 91.8%;
+        padding: 0rem 0rem 0rem 0rem;
+        flex-direction: row;
+        justify-content: space-between;
+        font-size: 0.7rem;
     }
 }

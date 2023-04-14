@@ -6,7 +6,7 @@ body{
 
 .container-menu {
     display: flex;
-    width: 100%;
+    width: 61rem;
     flex-direction: column;
 }
 
@@ -18,16 +18,11 @@ body{
     padding: 0rem 0rem 0rem 0rem;
 }
 
-.col-sm-12-titulo {
-    display: flex; 
-    padding: 0rem 0rem 0rem 3rem;
-}
+.col-sm-12-titulo {align-items: center;justify-content: center;width: 100%;}
 
 h1 {
-    display: flex;
-    padding: 2rem 6rem;
-    font-family: 'Playfair Display', serif;
     font-size: 3rem;
+    padding: 0rem;
 }
 
 /* FOTO Y TEXTO  */
@@ -69,12 +64,11 @@ h1 {
 
 .col-sm-8-texto2 {
     display: flex;
-    padding: 0rem 0rem 0rem 5rem;
+    padding: 5rem 0rem 0rem 2rem;
 }
 
 .col-sm-4-foto {
-    padding: 4rem 5rem;
-    display: flex;
+    padding: 2rem 4rem;
 }
 
 p {
@@ -92,12 +86,10 @@ p {
 @media  (min-width:768px) and (max-width:1023px){
     .row-titulo {
         display: flex;
-        padding: 1rem 0rem 0rem 15rem;
     }
 
     .col-sm-12-titulo {
         display: flex;
-        padding: 0rem 0rem 0rem 0rem;
     }
 
     .row-fotoYTexto {
@@ -108,13 +100,12 @@ p {
     }
 
     .col-sm-4-foto {
-        padding: 0rem 3rem 20rem 1rem;
         display: flex;
     }
 
     .col-sm-8-texto1 {
         display: flex;
-        padding: 1rem 1rem 1rem 1rem;
+        padding: 4rem 1rem 1rem 1rem;
     }
 
     p {

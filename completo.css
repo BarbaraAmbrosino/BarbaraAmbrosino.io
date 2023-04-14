@@ -1,51 +1,58 @@
-body{
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin:0;
+}
+
+body {
     display: flex;
     background-image: url("mili foto 4.jpg");
-    padding: 1rem 1rem 1rem 1rem;
+    padding: 1.5rem;
     height: 100%;
 }
 
-.container{
+.container {
     width: 100%;
     height: 100%;
     display: flex;
     position: revert;
     background-color: whitesmoke;
-    opacity: 95%;
+    opacity: 87%;
     flex-direction: column;
-    padding: 0rem 0rem 0rem 0rem;
 }
 
-iframe{
+iframe {
     display: flex;
     border-bottom: solid;
     border: aliceblue;
 }
+
 /* CONTAINER MENU */
 
-.row-menu{
+.row-menu {
     padding: 0rem 0rem 0rem 0rem;
     position: sticky;
     top: 0rem;
-    border-bottom: solid;
+    /* border-bottom: solid; */
 }
 
-.col-12-menu{
+.col-12-menu {
     display: flex;
     height: auto;
     width: 100%;
 }
 
-.menuu-iframe{
+.menuu-iframe {
     display: flex;
     width: 100%;
     height: auto;
 }
+
 
 /*CONTAINER ACERCA DE MI */
 
 
-.row-acercaDeMi{
+.row-acercaDeMi {
     display: flex;
     width: 100%;
     height: auto;
@@ -53,22 +60,22 @@ iframe{
     /* border-color: white; */
 }
 
-.col-12-acercademicol{
+.col-12-acercademicol {
     width: 100%;
     height: 100%;
     display: flex;
     padding: 0rem 0rem 0rem 0rem;
 }
 
-.acercademi-iframe{
+.acercademi-iframe {
     width: 100%;
-    height: 98rem;
+    height: 88rem;
 }
 
 /* CONTAINER GALERIA */
 
 
-.row-galeria{
+.row-galeria {
     display: flex;
     width: 100%;
     height: auto;
@@ -76,15 +83,21 @@ iframe{
     /* border-color: black; */
 }
 
-.col-12-galeria{
-        width: 100%;
-        height: 100%;
-        display: flex;
-        padding: 0rem 0rem 0rem 0rem;
+.col-12-galeria {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 0rem 0rem 0rem 0rem;
 }
 
-.galeriaa-iframe{
-    display:flex;
+.galeriaa-iframe {
+    display: flex;
     width: 100%;
-    height: 112rem;
+    height: 50rem;
+}
+
+.contactoo-iframe{
+    display: flex;
+    width: 100%;
+    height: 34rem;
 }

@@ -1,0 +1,8 @@
+body{
+    background-image: url("mili foto 6.jpg");
+    width: 100%;
+    height: auto;
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}

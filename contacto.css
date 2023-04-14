@@ -1,0 +1,61 @@
+*{
+    display: flex;
+}
+
+body{
+    width: 100%;
+    height: auto;
+}
+
+.container-contacto{
+    width: 59rem;
+    height: auto;
+    display: grid;
+}
+
+.row{
+    width: 100%;
+    height: auto;
+}
+
+.row-logos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.col-12{
+    width: 100%;
+    height: auto;
+}
+
+.col-12-titulo{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.col-12-logos{
+    display: flex;
+    align-items: center;
+    padding: 4rem;
+    justify-content: center;
+    border-style: outset;
+    border-width: 0.6rem;
+    background: white;
+}
+
+img{
+    width: 10rem;
+    padding: 1rem;
+    height: auto;
+}
+
+h1 {
+    font-size: 3rem;
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
